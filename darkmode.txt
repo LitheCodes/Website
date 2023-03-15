@@ -1,55 +1,43 @@
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
 
-/*Body HTML Tag Settings */
 
-/* If the user prefers light mode */
-@media screen and (prefers-color-scheme: light) {
+/* 
+/* If the user prefers dark mode */
+@media screen and (prefers-color-scheme: dark) {
 
 	/* Body HTML Tag Settings */
 	body {
 		margin: 0;
 		padding: 0;
-		background: #ffffff url(../images/img01.gif);
+		background: #183faa url(../images/background.png);
 		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 		font-size: 13px;
-		color: #837669;
+		color: #ffffff;
 	}
 
-	ref p {
-		margin: 0;
-		padding: 30px 0;
-		text-align: right;
-		line-height: normal;
-		color: #B5ADA5;
-	}
-
-	/* Heading 1, 2 & 3 settnigs */
-	h1, h2, h3 {
+	/* Heading 1, 2, and 3 font settings */
+	h1,
+	h2,
+	h3 {
 		margin: 0;
 		font-family: Georgia, "Times New Roman", Times, serif;
 		font-weight: normal;
-		color: #6D5A46;
+		color: #ffffff;
 	}
 
-	/* Heading 1 font size settings */
+	/* Heading font sizes */
 	h1 {
 		font-size: 44px;
 	}
 
-	/* Heading 2 font size settings */
 	h2 {
 		font-size: 26px;
 	}
 
-	/* Heading 3 settings */
 	h3 {}
 
-	/* Paragraph, List and Ordered List Settings */
-	p, ul, ol {
+	p,
+	ul,
+	ol {
 		margin-top: 0;
 		line-height: 240%;
 		text-align: justify;
@@ -57,8 +45,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 		font-size: 11px;
 	}
 
-	/* List and Ordered List Settings */
-	ul, ol {}
+	ul,
+	ol {}
 
 	blockquote {}
 
@@ -88,8 +76,6 @@ Released for free under a Creative Commons Attribution 2.5 License
 		display: none;
 	}
 
-
-
 	.list1 {}
 
 	.list1 li {
@@ -113,7 +99,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 	}
 
 	header {
-		width: 1200px;
+		width: 1000px;
 		height: 74px;
 		margin: 0 auto;
 		background: url(../images/img03.gif);
@@ -156,7 +142,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 	#menu .current_page_item a {
 		background: #A2CE89 url(../images/img06.gif) repeat-x;
-		color: #FFFFFF;
+		color: #0b2b56;
 	}
 
 	/* Search */
@@ -201,13 +187,12 @@ Released for free under a Creative Commons Attribution 2.5 License
 	}
 
 	/* Page */
-
 	#page {
-		width: 1000px;
+		width: 800px;
 		margin: 0 auto;
 		padding: 0 45px;
-		background: #FFFFFF url(../images/img08.gif) repeat-x;
-		border: 5px solid #FFFFFF;
+		background: #202124 url(../images/img08.gif) repeat-x;
+		border: 5px solid #000000;
 	}
 
 	/** LOGO */
@@ -217,7 +202,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 		background: url(../images/img09.gif) repeat-x left bottom;
 	}
 
-	#logo h1, #logo p {
+	#logo h1,
+	#logo p {
 		float: left;
 		margin: 0;
 		padding: 0;
@@ -230,7 +216,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 	#logo h1 a {
 		text-decoration: none;
-		color: #6D5A46;
+		color: #ffffff;
 	}
 
 	#logo h1 a:hover {
@@ -240,12 +226,12 @@ Released for free under a Creative Commons Attribution 2.5 License
 	#logo p {
 		padding: 65px 0 0 15px;
 		font: italic 13px Georgia, "Times New Roman", Times, serif;
-		color: #B6ACA2;
+		color: #ffffff;
 	}
 
 	#logo p a {
 		text-decoration: none;
-		color: #B6ACA2;
+		color: #ffffff;
 	}
 
 	#logo p a:hover {
@@ -256,7 +242,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 	#content {
 		float: left;
-		width: 710px;
+		width: 510px;
 	}
 
 	/* Post */
@@ -268,30 +254,30 @@ Released for free under a Creative Commons Attribution 2.5 License
 	.post .title {
 		margin-bottom: 3px;
 		padding: 2px 30px;
-		background: url(../images/img10.gif) repeat-y;
+		background: url(../images/darkmode/img10.gif) repeat-y;
 	}
 
 	.post .meta {
 		margin: 0 0 3px 0;
 		padding: 2px 30px;
-		background: url(../images/img11.gif) repeat-y;
+		background: url(../images/darkmode/img11.gif) repeat-y;
 		font: italic 13px Georgia, "Times New Roman", Times, serif;
-		color: #B6ACA2;
+		color: #ffffff;
 	}
 
 	.post .meta a {
-		color: #B6ACA2;
+		color: #ffffff;
 	}
 
 	.post .entry {
-		padding: 0px 30px;
-		background: url(../images/img12.gif) repeat-y;
+		padding: 25px 30px;
+		background: url(../images/darkmode/img12.gif) repeat-y;
 	}
 
 	.post .links {
 		margin: 0 250px 0 0;
 		padding: 0 0 0 10px;
-		background: #FEF7EF url(../images/img13.gif) repeat-x;
+		background: #000000 url(../images/darkmode/img13.gif) repeat-x;
 	}
 
 	.post .links .comments {
@@ -321,7 +307,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 	#sidebar li {
 		margin-bottom: 30px;
 		padding: 0 0 20px 30px;
-		background: url(../images/img12.gif) repeat-y;
+		background: url(../images/darkmode/img12.gif) repeat-y;
 	}
 
 	#sidebar li ul {
@@ -337,8 +323,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 	#sidebar h2 {
 		margin: 0 0 20px -30px;
 		padding: 2px 0 2px 30px;
-		background: url(../images/img10.gif) repeat-y;
-		border-bottom: 3px solid #FFFFFF;
+		background: url(../images/darkmode/img10.gif) repeat-y;
+		border-bottom: 3px solid #646464;
 		font-size: 18px;
 	}
 
@@ -359,27 +345,27 @@ Released for free under a Creative Commons Attribution 2.5 License
 	#calendar table {
 		width: 100%;
 		border-collapse: collapse;
-		border-right: 1px solid #F5F2EF;
+		border-right: 1px solid #646464;
 	}
 
 	#calendar thead th {
 		padding: 5px 0;
 		text-align: center;
-		border-top: 1px solid #F5F2EF;
-		border-left: 1px solid #F5F2EF;
-		background: #F5F2EF;
+		border-top: 1px solid #646464;
+		border-left: 1px solid #646464;
+		background: #35312d;
 	}
 
 	#calendar tbody td {
 		padding: 5px 0;
 		text-align: center;
-		border-top: 1px solid #F5F2EF;
-		border-left: 1px solid #F5F2EF;
+		border-top: 1px solid #646464;
+		border-left: 1px solid #646464;
 	}
 
 	#calendar tfoot td {
 		padding: 5px;
-		background: #FEF7EF url(../images/img13.gif) repeat-x;
+		background: #35312d url(../images/darkmode/img13.gif) repeat-x;
 	}
 
 	#calendar tfoot #next {
@@ -387,13 +373,13 @@ Released for free under a Creative Commons Attribution 2.5 License
 	}
 
 	#calendar #today {
-		background: #E7F1E1;
+		background: #000000;
 	}
 
 	/* Footer */
 
 	footer {
-		background: url(../images/img09.gif) repeat-x;
+		background: url(../images/darkmode/img09.png) repeat-x;
 	}
 
 	footer p {
@@ -401,11 +387,11 @@ Released for free under a Creative Commons Attribution 2.5 License
 		padding: 30px 0;
 		text-align: center;
 		line-height: normal;
-		color: #B5ADA5;
+		color: #ffffff;
 	}
 
 	footer a {
-		color: #B5ADA5;
+		color: #ffffff;
 	}
 
-}
+} 
