@@ -51,7 +51,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 	/* Paragraph, List and Ordered List Settings */
 	p, ul, ol {
 		margin-top: 0;
-		line-height: 240%;
+		line-height: 150%;
 		text-align: justify;
 		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 		font-size: 11px;
@@ -259,15 +259,55 @@ Released for free under a Creative Commons Attribution 2.5 License
 		width: 710px;
 	}
 
+	/* Grid used to place content */
+	#contentgrid {
+		float: left;
+		height: 100%;
+		border: solid black;
+
+	}
+
+	/* Content Column 1 */
+	#content1 {
+		width: 45%;
+		padding: 13px 10px 0px 10px;
+		float: left;
+	}
+
+	/* Content Column 2 */
+	#content2 {
+		border-left: 1px solid;
+		width: 45%;
+		float: left;
+		padding: 13px 0px 0px 10px;
+	}
+
+	/* Content Column 2 */
+	#content3 {
+		border-left: 1px solid;
+		width: 40%;
+		float: right;
+		padding: 13px 0px 0px 10px;
+	}
+
+	/* Content Column 2 */
+	#content2 {
+		border-left: 1px solid;
+		width: 50%;
+		float: left;
+		padding: 13px 0px 0px 10px;
+	}
+
+
 	/* Post */
 
 	.post {
 		margin-bottom: 25px;
 	}
 
-	.post .title {
+	#contentgrid .title {
 		margin-bottom: 3px;
-		padding: 2px 30px;
+		padding: 2px 20px;
 		background: url(../images/img10.gif) repeat-y;
 	}
 
