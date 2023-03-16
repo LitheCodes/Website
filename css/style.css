@@ -259,13 +259,15 @@ Released for free under a Creative Commons Attribution 2.5 License
 		width: 710px;
 	}
 
-	/* Grid used to place content */
-	#contentgrid {
-		float: left;
-		height: 100%;
-		border: solid black;
 
+
+	#container1 {
+		width: 45%;
+		padding: 13px 10px 0px 10px;
+		float: left;
 	}
+
+	#container2 {}
 
 	/* Content Column 1 */
 	#content1 {
@@ -277,7 +279,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 	/* Content Column 2 */
 	#content2 {
 		border-left: 1px solid;
-		width: 45%;
+		width: 50%;
 		float: left;
 		padding: 13px 0px 0px 10px;
 	}
@@ -290,13 +292,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 		padding: 13px 0px 0px 10px;
 	}
 
-	/* Content Column 2 */
-	#content2 {
-		border-left: 1px solid;
-		width: 50%;
-		float: left;
-		padding: 13px 0px 0px 10px;
-	}
+
+
+
 
 
 	/* Post */
