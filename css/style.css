@@ -27,6 +27,36 @@ Released for free under a Creative Commons Attribution 2.5 License
 		color: #B5ADA5;
 	}
 
+	#gridcontainer {
+		float: left;
+		height: 100%;
+
+	}
+
+	.row {
+		width: 100%;
+		height: 100%;
+		float: left;
+	}
+
+
+	.row .col2 {
+		float: left;
+		width: 45%;
+		height: 100%;
+		padding: 8px;
+
+	}
+	.row .col1 {
+		float: left;
+		width: 48%;
+		height: 100%;
+		padding: 8px;
+		border: 5px right black;
+	}
+
+
+
 	/* Heading 1, 2 & 3 settnigs */
 	h1, h2, h3 {
 		margin: 0;
@@ -252,51 +282,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 		text-decoration: underline;
 	}
 
-	/* Content */
 
-	#content {
-		float: left;
-		width: 710px;
-	}
 
-	/* Grid used to place content */
-	#contentgrid {
-		float: left;
-		height: 100%;
-		border: solid black;
-
-	}
-
-	/* Content Column 1 */
-	#content1 {
-		width: 45%;
-		padding: 13px 10px 0px 10px;
-		float: left;
-	}
-
-	/* Content Column 2 */
-	#content2 {
-		border-left: 1px solid;
-		width: 45%;
-		float: left;
-		padding: 13px 0px 0px 10px;
-	}
-
-	/* Content Column 2 */
-	#content3 {
-		border-left: 1px solid;
-		width: 40%;
-		float: right;
-		padding: 13px 0px 0px 10px;
-	}
-
-	/* Content Column 2 */
-	#content2 {
-		border-left: 1px solid;
-		width: 50%;
-		float: left;
-		padding: 13px 0px 0px 10px;
-	}
 
 
 	/* Post */
@@ -305,11 +292,6 @@ Released for free under a Creative Commons Attribution 2.5 License
 		margin-bottom: 25px;
 	}
 
-	#contentgrid .title {
-		margin-bottom: 3px;
-		padding: 2px 20px;
-		background: url(../images/img10.gif) repeat-y;
-	}
 
 	.post .meta {
 		margin: 0 0 3px 0;
