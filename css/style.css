@@ -2,14 +2,19 @@
 Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
+
+Modified by Natalie
 */
 
-/*Body HTML Tag Settings */
 
 /* If the user prefers light mode */
 @media screen and (prefers-color-scheme: light) {
 
-	/* Body HTML Tag Settings */
+	/********* HTML TAG SETTINGS *********/
+
+
+
+	/****** BODY SETTINGS *******/
 	body {
 		margin: 0;
 		padding: 0;
@@ -19,45 +24,11 @@ Released for free under a Creative Commons Attribution 2.5 License
 		color: #837669;
 	}
 
-	ref p {
-		margin: 0;
-		padding: 30px 0;
-		text-align: right;
-		line-height: normal;
-		color: #B5ADA5;
-	}
-
-	#gridcontainer {
-		float: left;
-		height: 100%;
-
-	}
-
-	.row {
-		width: 100%;
-		height: 100%;
-		float: left;
-	}
 
 
-	.row .col2 {
-		float: left;
-		width: 45%;
-		height: 100%;
-		padding: 8px;
+	/******* HEADING SETTINGS *******/
 
-	}
-	.row .col1 {
-		float: left;
-		width: 48%;
-		height: 100%;
-		padding: 8px;
-		border: 5px right black;
-	}
-
-
-
-	/* Heading 1, 2 & 3 settnigs */
+	/* Heading 1 2 and 3 */
 	h1, h2, h3 {
 		margin: 0;
 		font-family: Georgia, "Times New Roman", Times, serif;
@@ -65,20 +36,32 @@ Released for free under a Creative Commons Attribution 2.5 License
 		color: #6D5A46;
 	}
 
-	/* Heading 1 font size settings */
+	/* Heading 1 */
 	h1 {
 		font-size: 44px;
 	}
 
-	/* Heading 2 font size settings */
+	/* Heading 2 */
 	h2 {
 		font-size: 26px;
 	}
 
-	/* Heading 3 settings */
+	/* Heading 3 */
 	h3 {}
 
-	/* Paragraph, List and Ordered List Settings */
+	/* Heading 2 (Class: Title) */
+	h2.title {
+		padding: 7px 0px;
+		text-align: left;
+	}
+
+
+
+
+
+	/******* PARAGRAPH/LIST SETTINGS *******/
+
+	/* p, unordered list and ordered list settings */
 	p, ul, ol {
 		margin-top: 0;
 		line-height: 150%;
@@ -90,67 +73,159 @@ Released for free under a Creative Commons Attribution 2.5 License
 	/* List and Ordered List Settings */
 	ul, ol {}
 
-	blockquote {}
 
+
+	/******* HYPERLINK SETTINGS *******/
+
+	/* Hyperlink */
 	a {
-		color: #D87EB4;
+		color: #777777;
 	}
 
+	/* Hyperlink Hover */
 	a:hover {
 		text-decoration: none;
 	}
 
+	/* Hyperlink Image */
 	a img {
 		border: none;
 	}
 
+
+
+	/******* IMAGE SETTINGS *******/
+
+	/* Image Class: Left */
 	img.left {
 		float: left;
 		margin: 7px 30px 0 0;
 	}
 
+	/* Image Class: Right */
 	img.right {
 		float: right;
 		margin: 7px 0 0 30px;
 	}
 
+	/*** Horizontal Rule ***/
+	/* Code used from: https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
 	hr {
-		display: none;
+		border: none;
+		height: 1px;
+		background-color: #dad7d7;
+
 	}
 
 
 
-	.list1 {}
-
-	.list1 li {
-		float: left;
-		line-height: normal;
-	}
-
-	.list1 li img {
-		margin: 0 30px 30px 0;
-	}
-
-	.list1 li.alt img {
-		margin-right: 0;
-	}
+	/******* HEADER AND FOOTER SETTINGS *******/
 
 	/* Header */
-
-	#header-wrapper {
-		height: 74px;
-		background: url(../images/img02.gif);
-	}
-
 	header {
-		width: 1200px;
+		width: 1100px;
 		height: 74px;
 		margin: 0 auto;
 		background: url(../images/img03.gif);
 	}
 
-	/* Menu */
+	/* Footer */
+	footer {
+		background: url(../images/img09.gif) repeat-x;
+	}
 
+	/* Footer (Tag: Paragraph) */
+	footer p {
+		margin: 0;
+		padding: 30px 0;
+		text-align: center;
+		line-height: normal;
+		color: #B5ADA5;
+	}
+
+	/* Footer (Tag: Hyperlink) */
+	footer a {
+		color: #B5ADA5;
+	}
+
+
+
+	/********* CLASSES *********/
+
+
+	/******* CSS GRID *******/
+
+	/* Row Class */
+	.row {
+		width: 100%;
+		float: left;
+		border-bottom: 1px solid #dad7d7;
+	}
+
+	/* Row Class (Class:Column) */
+	.row .col {
+		float: left;
+		width: 48%;
+		padding: 0 9px;
+		border: 5px right black;
+	}
+
+	/* Column Class (Tag: Heading3) */
+	.col h3 {
+		padding: 0px 0px 5px 0px;
+	}
+
+	/********* IDS *********/
+
+
+	/******* CONTACT INFORMATION *******/
+	#contactinfo {
+		padding: 0px;
+	}
+
+	/* Contact Information (Tag: Heading3) */
+	#contactinfo h3 {
+		line-height: 1.9;
+		font-size: 22px;
+		padding: 2px;
+	}
+
+	/* Contact Inforamtion (Class: Row) */
+	#contactinfo .row {
+		width: 100%;
+		margin: 0px 0px 5px 0px;
+	}
+
+	/* Contact Information (Class: Image) */
+	#contactinfo img {
+		float: left;
+		width: 50px;
+		height: 50px;
+	}
+
+	/* Contact Information (Class: Row) */
+	#contactinfo .row {
+		border: none
+	}
+
+
+
+	/******* HEADER WRAPPER *******/
+	#header-wrapper {
+		height: 74px;
+		background: url(../images/img02.gif);
+	}
+
+	/******* GRID CONTAINER *******/
+
+	#gridcontainer {}
+
+	/******* INTRO *******/
+	#intro {
+		padding: 0 9px;
+	}
+
+	/******* MENU *******/
 	#menu {
 		float: left;
 		width: 680px;
@@ -158,6 +233,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 		background: url(../images/img04.gif) no-repeat;
 	}
 
+	/* Menu (Tag: Unordered List) */
 	#menu ul {
 		margin: 0;
 		padding: 33px 0 0 90px;
@@ -165,11 +241,13 @@ Released for free under a Creative Commons Attribution 2.5 License
 		line-height: normal;
 	}
 
+	/* Menu (Tag: Ordered List) */
 	#menu li {
 		display: block;
 		float: left;
 	}
 
+	/* Menu (Tag: Hyperlink) */
 	#menu a {
 		display: block;
 		float: left;
@@ -180,58 +258,20 @@ Released for free under a Creative Commons Attribution 2.5 License
 		color: #658453;
 	}
 
+	/* Menu (Tag: Hyperlink Hover) */
 	#menu a:hover {
 		text-decoration: underline;
 	}
 
+	/* Menu (Class: current_page_item, Tag: Hyperlink) */
 	#menu .current_page_item a {
 		background: #A2CE89 url(../images/img06.gif) repeat-x;
 		color: #FFFFFF;
 	}
 
-	/* Search */
 
-	#search {
-		float: right;
-		width: 305px;
-		height: 74px;
-		background: url(../images/img05.gif) no-repeat right top;
-	}
 
-	#search form {
-		margin: 0;
-		padding: 36px 0 0 0;
-	}
-
-	#search fieldset {
-		margin: 0;
-		padding: 0;
-		border: none;
-	}
-
-	#search input {
-		float: left;
-		font: 12px Georgia, "Times New Roman", Times, serif;
-		border: none;
-	}
-
-	#search-text {
-		width: 135px;
-		height: 18px;
-		padding: 3px 0 0 5px;
-		background: #ECF9E4;
-		color: #658453;
-	}
-
-	#search-submit {
-		height: 21px;
-		margin-left: 12px;
-		background: #BE7BA2 url(../images/img07.gif) repeat-x;
-		color: #FFFFFF;
-	}
-
-	/* Page */
-
+	/******* PAGE *******/
 	#page {
 		width: 1000px;
 		margin: 0 auto;
@@ -240,13 +280,24 @@ Released for free under a Creative Commons Attribution 2.5 License
 		border: 5px solid #FFFFFF;
 	}
 
-	/** LOGO */
 
+
+	/******* LOGO *******/
 	#logo {
 		height: 148px;
 		background: url(../images/img09.gif) repeat-x left bottom;
 	}
 
+
+	/* Logo (Tag: Img) */
+	#logo img {
+		float: right;
+		width: 80px;
+		height: 80px;
+		padding: 20px 0px 0px 0px;
+	}
+
+	/* Logo (Tag: Heading1, Tag: Paragraph) */
 	#logo h1, #logo p {
 		float: left;
 		margin: 0;
@@ -254,180 +305,37 @@ Released for free under a Creative Commons Attribution 2.5 License
 		line-height: normal;
 	}
 
+	/* Logo (Tag: Heading1) */
 	#logo h1 {
 		padding-top: 45px;
 	}
 
+	/* Logo (Tag: Heading1, Hyperlink */
 	#logo h1 a {
 		text-decoration: none;
 		color: #6D5A46;
 	}
 
+	/* Logo (Tag: Hyperlink1, Hyperlink Hover) */
 	#logo h1 a:hover {
 		text-decoration: underline;
 	}
 
+	/* Logo (Tag: Paragraph) */
 	#logo p {
 		padding: 65px 0 0 15px;
 		font: italic 13px Georgia, "Times New Roman", Times, serif;
 		color: #B6ACA2;
 	}
 
+	/* Logo (Tag: Paragraph, Hyperlink) */
 	#logo p a {
 		text-decoration: none;
 		color: #B6ACA2;
 	}
 
+	/* Logo (Tag: Paragraph, Hyperlink Hover) */
 	#logo p a:hover {
 		text-decoration: underline;
 	}
-
-
-
-
-
-	/* Post */
-
-	.post {
-		margin-bottom: 25px;
-	}
-
-
-	.post .meta {
-		margin: 0 0 3px 0;
-		padding: 2px 30px;
-		background: url(../images/img11.gif) repeat-y;
-		font: italic 13px Georgia, "Times New Roman", Times, serif;
-		color: #B6ACA2;
-	}
-
-	.post .meta a {
-		color: #B6ACA2;
-	}
-
-	.post .entry {
-		padding: 0px 30px;
-		background: url(../images/img12.gif) repeat-y;
-	}
-
-	.post .links {
-		margin: 0 250px 0 0;
-		padding: 0 0 0 10px;
-		background: #FEF7EF url(../images/img13.gif) repeat-x;
-	}
-
-	.post .links .comments {
-		padding-left: 22px;
-		background: url(../images/img14.gif) no-repeat left center;
-	}
-
-	.post .links .permalink {
-		padding-left: 17px;
-		background: url(../images/img15.gif) no-repeat left center;
-	}
-
-	/* Sidebar */
-
-	#sidebar {
-		float: right;
-		width: 240px;
-	}
-
-	#sidebar ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		line-height: normal;
-	}
-
-	#sidebar li {
-		margin-bottom: 30px;
-		padding: 0 0 20px 30px;
-		background: url(../images/img12.gif) repeat-y;
-	}
-
-	#sidebar li ul {
-		line-height: 200%;
-	}
-
-	#sidebar li li {
-		margin: 0;
-		padding: 0;
-		background: url(../images/spacer.gif);
-	}
-
-	#sidebar h2 {
-		margin: 0 0 20px -30px;
-		padding: 2px 0 2px 30px;
-		background: url(../images/img10.gif) repeat-y;
-		border-bottom: 3px solid #FFFFFF;
-		font-size: 18px;
-	}
-
-
-	#sidebar p {
-		line-height: 200%;
-	}
-
-	/* Calendar */
-
-	#calendar {}
-
-	#calendar caption {
-		padding-bottom: 5px;
-		font-weight: bold;
-	}
-
-	#calendar table {
-		width: 100%;
-		border-collapse: collapse;
-		border-right: 1px solid #F5F2EF;
-	}
-
-	#calendar thead th {
-		padding: 5px 0;
-		text-align: center;
-		border-top: 1px solid #F5F2EF;
-		border-left: 1px solid #F5F2EF;
-		background: #F5F2EF;
-	}
-
-	#calendar tbody td {
-		padding: 5px 0;
-		text-align: center;
-		border-top: 1px solid #F5F2EF;
-		border-left: 1px solid #F5F2EF;
-	}
-
-	#calendar tfoot td {
-		padding: 5px;
-		background: #FEF7EF url(../images/img13.gif) repeat-x;
-	}
-
-	#calendar tfoot #next {
-		text-align: right;
-	}
-
-	#calendar #today {
-		background: #E7F1E1;
-	}
-
-	/* Footer */
-
-	footer {
-		background: url(../images/img09.gif) repeat-x;
-	}
-
-	footer p {
-		margin: 0;
-		padding: 30px 0;
-		text-align: center;
-		line-height: normal;
-		color: #B5ADA5;
-	}
-
-	footer a {
-		color: #B5ADA5;
-	}
-
 }
