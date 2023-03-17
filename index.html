@@ -12,35 +12,33 @@ Released   : 2021-
 
 <html lang="en">
 
-<!-- Head 
-Contains title information, charset, styles and other important information
--->
+
+<!-- Head -->
 
 <head>
+	<!-- Settings -->
 	<meta charset="utf-8">
-	<title>Australian Game Directory</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+
+	<!-- Style Sheet-->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+	<!-- Window/Tab Title -->
+	<title>Home</title>
 </head>
 
-<!-- Body 
-	Contains the content and markup
--->
+<!-- Body  -->
 
 <body>
-
-
+	<!-- Block: Header-Wrapper (ID) -->
 	<div id="header-wrapper">
 		<header>
-			<!-- Banner menu
-		Contains options at the top of the screen to navigate through the website -->
 			<div id="menu">
 				<ul>
-					<li class="current_page_item"><a href="#">Home</a></li>
+					<li class="current_page_item"><a href="index.html">Home</a></li>
 					<li><a href="about.html">About Me</a></li>
-					<li><a href="#">Hobbies</a></li>
-					<li><a href="#">Goals</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
 					<li><a href="gardening.html">Gardening Tips</a></li>
 				</ul>
 			</div>
@@ -58,162 +56,107 @@ Contains title information, charset, styles and other important information
 		<!-- end #header -->
 	</div>
 	<!-- end #header-wrapper -->
-
+	<!-- Page -->
 	<div id="page">
+
+		<!-- $logo -->
 		<div id="logo">
-			<h1><a href="#">Australian Game Directory</a></h1>
+			<img src="images/logo.png" alt="Website Logo">
+			<h1><a href="#">Gardening Tips</a></h1>
 		</div>
-		<hr />
 		<!-- end #logo -->
 
-		<div id="content">
-			<div class="post">
-				<h2 class="title">Welcome to AGD</h2>
-				<p class="meta"><em>{ Posted by <a href="#">Natalie Young</a> on March 2, 2023 }</em></p>
-				<div class="entry">
-					<img src="images/img16.jpg" alt="" width="110" height="110" class="left" />
-					<p>This is <strong>Optimism</strong>, a free, fully standards-compliant CSS template designed
-						by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> for
-						<a href="http://www.freecsstemplates.org/">Free CSS Templates</a>, released for free under the
-						<a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5</a>
-						license.
-						The photos in this design are from <a href="http://www.pdphoto.org/">PDPhoto.org</a>. You're
-						free to use this
-						template for anything as long as you link back to <a href="http://www.freecsstemplates.org/">my
-							site</a>.
-						Enjoy :)
-					</p>
-					<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum
-						ipsum.
-						Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut
-						ante. In id eros.
-						Suspendisse lacus turpis, cursus egestas at sem.</p>
-					<p class="links"><a href="#" class="permalink">Full article</a></p>
-				</div>
-			</div>
-			<div class="post">
-				<h2 class="title">Hollow Knight is an Australian game!</h2>
-				<p class="meta"><em>{ Posted by <a href="#">Natalie Young</a> on March 2, 2023 }</em></p>
-				<div class="entry">
-					<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum
-						vel,
-						tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum.
-						Proin imperdiet
-						est. Phasellus <a href="#">dapibus semper urna</a>.</p>
-					<ol>
-						<li>It was funded as part of a gaming surplus package</li>
-						<li>Then lesser known Australians used this money to make a game.</li>
-						<li>The game became a worldwide hit!</li>
-					</ol>
-					<p>Praesent ac lectus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus augue.
-						Fusce eget tellus
-						ultrices ligula volutpat adipiscing. Aenean ligula lectus, vehicula in, dictum a, fermentum nec,
-						felis. Nunc ac
-						turpis in leo posuere imperdiet.</p>
-					<p class="links"><a href="#" class="permalink">Full article</a></p>
-				</div>
-			</div>
-		</div>
-		<!-- end #content -->
 
-		<div id="sidebar">
-			<ul>
-				<li>
-					<h2>Aliquam tempus</h2>
-					<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper urna. Pellentesque
-						ornare, orci in consectetuer hendrerit, volutpat.</p>
-				</li>
-				<li id="calendar">
-					<h2>Calendar</h2>
-					<div id="calendar_wrap">
-						<table summary="Calendar">
-							<caption>
-								January 2022
-							</caption>
-							<thead>
-								<tr>
-									<th abbr="Monday" scope="col" title="Monday">M</th>
-									<th abbr="Tuesday" scope="col" title="Tuesday">T</th>
-									<th abbr="Wednesday" scope="col" title="Wednesday">W</th>
-									<th abbr="Thursday" scope="col" title="Thursday">T</th>
-									<th abbr="Friday" scope="col" title="Friday">F</th>
-									<th abbr="Saturday" scope="col" title="Saturday">S</th>
-									<th abbr="Sunday" scope="col" title="Sunday">S</th>
-								</tr>
-							</thead>
-							<tfoot>
-								<tr>
-									<td abbr="December" colspan="3" id="prev"><a href="#" title="">&laquo; Dec</a></td>
-									<td class="pad">&nbsp;</td>
-									<td abbr="February" colspan="3" id="next"><a href="#" title="">Feb &raquo;</a></td>
-								</tr>
-							</tfoot>
-							<tbody>
-								<tr>
-									<td colspan="5" class="pad">&nbsp;</td>
-									<td>1</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>4</td>
-									<td>5</td>
-									<td>6</td>
-									<td>7</td>
-									<td>8</td>
-									<td>9</td>
-								</tr>
-								<tr>
-									<td>10</td>
-									<td id="today">11</td>
-									<td>12</td>
-									<td>13</td>
-									<td>14</td>
-									<td>15</td>
-									<td>16</td>
-								</tr>
-								<tr>
-									<td>17</td>
-									<td>18</td>
-									<td>19</td>
-									<td>20</td>
-									<td>21</td>
-									<td>22</td>
-									<td>23</td>
-								</tr>
-								<tr>
-									<td>24</td>
-									<td>25</td>
-									<td>26</td>
-									<td>27</td>
-									<td>28</td>
-									<td>29</td>
-									<td>30</td>
-								</tr>
-								<tr>
-									<td>31</td>
-									<td class="pad" colspan="6">&nbsp;</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li>
-					<h2>Turpis nulla</h2>
-					<ul class="list1">
-						<li><a href="#"><img src="images/img17.jpg" alt="" width="90" height="90" /></a></li>
-						<li class="alt"><a href="#"><img src="images/img18.jpg" alt="" width="90" height="90" /></a>
-						</li>
-						<li><a href="#"><img src="images/img19.jpg" alt="" width="90" height="90" /></a></li>
-						<li class="alt"><a href="#"><img src="images/img20.jpg" alt="" width="90" height="90" /></a>
-						</li>
-					</ul>
-					<p style="clear: both; margin: 0; line-height: normal; text-align: right;"><a href="#">More photos
-							&gt;</a></p>
-				</li>
-			</ul>
+		<!-- Introduction to the page -->
+		<div id="intro">
+			<h2 class="title">Introduction</h2>
+			<p> Welcome to my website. Take a look below to see what you can expect to find here.
+			</p>
+
 		</div>
-		<!-- end #sidebar -->
+		<hr>
+
+
+
+
+
+		<!-- Row Container -->
+		<div class="row">
+
+			<!-- Column Class-->
+			<div class="col">
+
+				<!-- Title -->
+				<h2 class="title">Gardening Tips</h2>
+				<a href="https://www.localseeds.com.au/product/spring-onion-green-onions/"><img
+						src="images/springonion.jpg" alt="" width="200" height="200" class="right"></a>
+
+				<!-- Opening Paragraph -->
+				<p>I'm not a super experienced gardener but I am lazy and love low maintainence plants that are easy to
+					grow. If you
+					would like to know some of the lessons I have learned along the way, click either Gardening Tips in
+					the navigation Bar above,
+					or <a href="gardening.html">click here</a>
+				</p>
+
+
+				<!-- Link to Source Image-->
+				<p class="links"><a href="https://www.localseeds.com.au/product/spring-onion-green-onions/"
+						class="permalink">Source Image From LocalSeeds</a></p>
+			</div>
+			<div class="col" style="border-left: 1px solid #c9c9c9">
+
+				<h2 class="title">Lamiaceae Herb Cultivation and Cloning</h2>
+				<!-- Image -->
+				<a href="https://www.amazingherbgarden.com/rooting-basil-cuttings/"><img src="images/basil.png" alt=""
+						width="200" height="200" class="right"></a>
+
+				<!-- Paragraph -->
+				<p>While growing from seed is an option, herbs in the Lamiacaea family can be cultivated, or
+					"cloned" from existing plants to create healthy copies of those plants
+					that will grow individually. In terms of success rate, this depends on the herb with leafy
+					herbs
+					like mint and basil being easier
+					and woodier herbs such as rosemary being more difficult.
+
+					<!-- List -->
+				<h3>Lamiacae Herbs</h3>
+				<ul>
+					<li>Mint</li>
+					<li>Basil (and thai basil)</li>
+					<li>Rosemary</li>
+					<li>Sage</li>
+					<li>Oregano</li>
+					<li>Lavendar</li>
+					<li>and more</li>
+				</ul>
+
+				<!-- Step by Step guide to cloning herbs-->
+				<h3>Step-By-Step Guide</h3>
+				<ol>
+					<li>Take a cutting from a healthy plant (Ensure you leave as much of the stem on your
+						cutting as
+						possible)</li>
+					<li>Cut off all leaves except for the top most leaves</li>
+					<li>Change water once a day while waiting for the herb to grow roots from the stem</li>
+					<li>Once roots are grown, bury roots in dirt and ensure plant is watered</li>
+				</ol>
+
+				<h3>Additional Information</h3>
+				<p>If you're worried about harming your plant by taking cuttings, be reassured. Cutting lamiacae
+					plants actually encourages growth! (wow).
+					Cutting a lamiacae herb above the leaf will prompt two new stems to grow diagonally
+					from where you cut. You can then try using the cutting you took either in your cooking, or
+					to
+					make another plant! (amazing). If you are taking cuttings from plants that are not your own,
+					make sure to ask permission first!</p>
+
+				<p class="links"><a href="#" class="permalink">Full article</a></p>
+			</div>
+		</div>
+
+		<hr>
+
 		<div style="clear: both;">&nbsp;</div>
 		<footer>
 			<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a

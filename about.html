@@ -12,66 +12,132 @@ Released   : 2021-
 
 <html lang="en">
 
-<!-- Head 
-Contains title information, charset, styles and other important information
--->
+
+<!-- Head -->
 
 <head>
-	<meta charset="utf-8"> <!-- Character set (UTF-8)-->
-	<title>About Me</title> <!-- Tab / Window title-->
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+	<!-- Metadata -->
+	<meta charset="utf-8">
+	<meta name="color-scheme" content="dark light">
+	<meta name="keywords" content="student, website">
+	<meta name="description" content="My website for assignment 2">
+
+	<!-- Title -->
+	<title>About Me</title>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 </head>
 
-<!-- Body 
-	Contains the content and markup
--->
+
+<!-- Body -->
 
 <body>
-	<hr>
+
+	<!-- Header-Wrapper-->
 	<div id="header-wrapper">
 		<header>
-			<!-- Banner menu
-			Contains options at the top of the screen to navigate through the website-->
+
+			<!-- Menu -->
 			<div id="menu">
 				<ul>
-					<li><a href=index.html>Home</a></li>
-					<li class="current_page_item"><a>About Me</a></li>
-					<li><a href="#">Photos</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Ethics</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li class="current_page_item"><a href="about.html">About Me</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+					<li><a href="gardening.html">Gardening Tips</a></li>
 				</ul>
 			</div>
-			<!-- end #menu -->
-			<div id="search">
-				<form method="get" action="">
-					<fieldset>
-						<input type="text" name="s" id="search-text" size="15" />
-						<input type="submit" id="search-submit" value="Search" />
-					</fieldset>
-				</form>
-			</div>
-			<!-- end #search -->
 		</header>
-		<!-- end #header -->
 	</div>
-	<!-- end #header-wrapper -->
 
-	<div id="page" class> == $0
-		<div id="logo" class>
-			<h1>
-				About Me
-			</h1>
-		</div> == $0
+	<!-- Page Container -->
+	<div id="page">
+
+		<!-- Logo Container -->
+		<div id="logo">
+			<img src="images/logo.png" alt="Website Logo">
+			<h1><a href="#">About Me</a></h1>
+		</div>
+
+		<!-- Intro -->
+		<div id="intro">
+			<h2 class="title">Introduction</h2>
+			<p> My name is Natalie and I'm a student studying computer programming. If you have any inquiries.
+				My contact information can be obtained from this page.
+			</p>
+
+		</div>
+
+		<!-- Horizontal Rule -->
 		<hr>
-		<p>
-			My name is Natalie and I am a student at Southern Cross University
-		</p>
-	</div>
 
+		<!-- Row Container -->
+		<div class="row">
+
+			<!-- Contact Info -->
+			<div id="contactinfo">
+
+				<!-- Column (Address)-->
+				<div class="col">
+					<h2 class="title">Address:</h2>
+					<a href="https://www.google.com/maps/place/Ultimo+NSW+2007" title="Open Google Maps">
+						<h3>55 Sydney Street, NSW, 2000 </h3>
+					</a>
+				</div>
+
+				<!-- Column (Contact Information)-->
+				<div class="col" style="border-left: 1px solid #c9c9c9">
+
+					<!-- Title -->
+					<h2 class="title">Contact Information</h2>
+
+					<!-- Row 1 (Phone Number) -->
+					<div class="row">
+
+						<!-- Col 1 (Phone Icon)-->
+						<div class="col" style="width: 10%">
+							<img src="images/phone.png" alt="Phone Icon">
+						</div>
+
+						<!-- Col 2 (Phone Number)-->
+						<div class=" col">
+							<a href="tel:0455555555" title="Call 0455-555-555">
+								<h3>0455-555-555</h3>
+							</a>
+						</div>
+					</div>
+
+
+					<!-- Row 2 (Email Address) -->
+					<div class="row">
+
+						<!-- Col 1 (Mail Icon) -->
+						<div class="col" style="width: 10%">
+							<img src="images/mail.png" alt="Email Icon">
+						</div>
+
+						<!-- Col 2 (Email Address) -->
+						<div class="col">
+							<a href="mailto:natalie@email.com" title="Email Natalie">
+								<h3>natalie@email.com</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="clear: both;">&nbsp;</div>
+		<footer>
+			<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a
+					href="http://www.nodethirtythree.com/">NodeThirtyThree</a> &amp; <a
+					href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+		</footer>
+		<!-- end #footer -->
 	</div>
+	<!-- end #page -->
+	<div align=center>Put something here.</div>
 
 </body>
 
