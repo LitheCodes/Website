@@ -8,12 +8,12 @@ Modified by Natalie
 
 
 /* If the user prefers light mode */
+
+
+/********* HTML TAG SETTINGS *********/
+
+
 @media screen and (prefers-color-scheme: light) {
-
-	/********* HTML TAG SETTINGS *********/
-
-
-
 	/****** BODY SETTINGS *******/
 	body {
 		margin: 0;
@@ -23,7 +23,6 @@ Modified by Natalie
 		font-size: 13px;
 		color: #837669;
 	}
-
 
 
 	/******* HEADING SETTINGS *******/
@@ -82,6 +81,10 @@ Modified by Natalie
 		color: #777777;
 	}
 
+	a:visited {
+		color: #6D5A46;
+	}
+
 	/* Hyperlink Hover */
 	a:hover {
 		text-decoration: none;
@@ -116,6 +119,7 @@ Modified by Natalie
 		background-color: #dad7d7;
 
 	}
+
 
 
 
@@ -179,33 +183,42 @@ Modified by Natalie
 
 
 	/******* CONTACT INFORMATION *******/
-	#contactinfo {
+
+	#contactinfo ul {
 		padding: 0px;
+		margin: 0px;
+		width: 80%;
+		list-style-type: none;
 	}
 
-	/* Contact Information (Tag: Heading3) */
 	#contactinfo h3 {
-		line-height: 1.9;
+		line-height: 2;
 		font-size: 22px;
-		padding: 2px;
+		padding: 0px;
+		display: inline;
+
 	}
 
-	/* Contact Inforamtion (Class: Row) */
-	#contactinfo .row {
-		width: 100%;
-		margin: 0px 0px 5px 0px;
+
+	#contactinfo h3:hover {
+		text-decoration: underline;
+		background-color: hsl(0, 0%, 89%);
 	}
 
-	/* Contact Information (Class: Image) */
-	#contactinfo img {
+	#contactinfo a:link {
+		text-decoration: none;
+	}
+
+	#contactinfo h3:active {
+		background-color: hsl(296, 42%, 63%);
+	}
+
+	img.icon {
+		width: 40px;
+		height: 40px;
+		margin: 2px;
 		float: left;
-		width: 50px;
-		height: 50px;
-	}
 
-	/* Contact Information (Class: Row) */
-	#contactinfo .row {
-		border: none
 	}
 
 
@@ -278,6 +291,10 @@ Modified by Natalie
 		padding: 0 45px;
 		background: #FFFFFF url(../images/img08.gif) repeat-x;
 		border: 5px solid #FFFFFF;
+	}
+
+	.col a:hover {
+		background-color: pink;
 	}
 
 

@@ -4,11 +4,20 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 
-Name       : Optimism
-Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Name       : Ass2Website
+Description: A two-column website
 Version    : 2.0
-Released   : 2021-
+Released   : 2023-
 -->
+
+<!-- Icon Sources (Creative Commons): 
+
+Google Maps: https://commons.wikimedia.org/wiki/File:Google_Maps_icon_%282015-2020%29.svg
+Phone: https://commons.wikimedia.org/wiki/Category:Telephone_icons#/media/File:ISO_7010_Style_-_Emergency_Phone.svg
+Mail: https://commons.wikimedia.org/wiki/Category:E-mail_icons#/media/File:Email_withcircle.svg
+
+-->
+
 
 <html lang="en">
 
@@ -73,61 +82,46 @@ Released   : 2021-
 		<!-- Horizontal Rule -->
 		<hr>
 
-		<!-- Row Container -->
-		<div class="row">
-
-			<!-- Contact Info -->
-			<div id="contactinfo">
+		<!-- ContactInfo Container-->
+		<div id="contactinfo">
+			<!-- Row Container -->
+			<div class="row">
 
 				<!-- Column (Address)-->
 				<div class="col">
 					<h2 class="title">Address:</h2>
+					<!-- List (Class ContactInfo)-->
+
+					<img src="images/googlemaps.png" class="icon" alt="map">
 					<a href="https://www.google.com/maps/place/Ultimo+NSW+2007" title="Open Google Maps">
 						<h3>55 Sydney Street, NSW, 2000 </h3>
 					</a>
+
 				</div>
 
 				<!-- Column (Contact Information)-->
 				<div class="col" style="border-left: 1px solid #c9c9c9">
+					<h2 class="title">Contact Information:</h2>
 
-					<!-- Title -->
-					<h2 class="title">Contact Information</h2>
-
-					<!-- Row 1 (Phone Number) -->
-					<div class="row">
-
-						<!-- Col 1 (Phone Icon)-->
-						<div class="col" style="width: 10%">
-							<img src="images/phone.png" alt="Phone Icon">
-						</div>
-
-						<!-- Col 2 (Phone Number)-->
-						<div class=" col">
+					<!-- List (Class ContactInfo)-->
+					<ul>
+						<li>
+							<img src="images/phone.png" class="icon" alt="Phone Icon">
 							<a href="tel:0455555555" title="Call 0455-555-555">
 								<h3>0455-555-555</h3>
 							</a>
-						</div>
-					</div>
-
-
-					<!-- Row 2 (Email Address) -->
-					<div class="row">
-
-						<!-- Col 1 (Mail Icon) -->
-						<div class="col" style="width: 10%">
-							<img src="images/mail.png" alt="Email Icon">
-						</div>
-
-						<!-- Col 2 (Email Address) -->
-						<div class="col">
+						</li>
+						<li>
+							<img src="images/mail.png" class="icon" alt="Email Icon">
 							<a href="mailto:natalie@email.com" title="Email Natalie">
 								<h3>natalie@email.com</h3>
 							</a>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+
 
 		<div style="clear: both;">&nbsp;</div>
 		<footer>

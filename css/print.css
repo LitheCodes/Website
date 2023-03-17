@@ -175,35 +175,44 @@ footer a {
 
 
 /******* CONTACT INFORMATION *******/
-#contactinfo {
+
+#contactinfo ul {
     padding: 0px;
+    margin: 0px;
+    width: 80%;
+    list-style-type: none;
 }
 
-/* Contact Information (Tag: Heading3) */
 #contactinfo h3 {
-    line-height: 1.9;
+    line-height: 2;
     font-size: 22px;
+    padding: 0px;
+    display: inline;
+
+}
+
+
+#contactinfo h3:hover {
+    text-decoration: underline;
+    background-color: hsl(0, 0%, 89%);
+}
+
+#contactinfo a:link {
+    text-decoration: none;
+}
+
+#contactinfo h3:active {
+    background-color: hsl(296, 42%, 63%);
+}
+
+img.icon {
+    width: 40px;
+    height: 40px;
     padding: 2px;
-}
-
-/* Contact Inforamtion (Class: Row) */
-#contactinfo .row {
-    width: 100%;
-    margin: 0px 0px 5px 0px;
-}
-
-/* Contact Information (Class: Image) */
-#contactinfo img {
-    display: none;
     float: left;
-    width: 50px;
-    height: 50px;
+    display: none
 }
 
-/* Contact Information (Class: Row) */
-#contactinfo .row {
-    border: none
-}
 
 
 
