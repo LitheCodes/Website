@@ -1,0 +1,339 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Modified by Natalie
+*/
+
+/********* HTML TAG SETTINGS *********/
+
+
+
+/****** BODY SETTINGS *******/
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+
+
+
+/******* HEADING SETTINGS *******/
+
+/* Heading 1 2 and 3 */
+h1, h2, h3 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    color: #000000;
+}
+
+/* Heading 1 */
+h1 {
+    font-size: 44px;
+}
+
+/* Heading 2 */
+h2 {
+    font-size: 26px;
+}
+
+/* Heading 3 */
+h3 {}
+
+/* Heading 2 (Class: Title) */
+h2.title {
+    padding: 7px 0px;
+    text-align: left;
+}
+
+
+
+
+
+/******* PARAGRAPH/LIST SETTINGS *******/
+
+/* p, unordered list and ordered list settings */
+p, ul, ol {
+    margin-top: 0;
+    line-height: 150%;
+    text-align: justify;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+/* List and Ordered List Settings */
+ul, ol {}
+
+
+
+/******* HYPERLINK SETTINGS *******/
+
+/* Hyperlink */
+a {
+    color: #000000;
+}
+
+/* Hyperlink Hover */
+a:hover {
+    text-decoration: none;
+}
+
+/* Hyperlink Image */
+a img {
+    border: none;
+}
+
+
+
+/******* IMAGE SETTINGS *******/
+
+/* Image Class: Left */
+img.left {
+    float: left;
+    margin: 7px 30px 0 0;
+}
+
+/* Image Class: Right */
+img.right {
+    float: right;
+    margin: 7px 0 0 30px;
+}
+
+/*** Horizontal Rule ***/
+/* Code used from: https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #dad7d7;
+
+}
+
+
+
+/******* HEADER AND FOOTER SETTINGS *******/
+
+/* Header */
+header {
+    width: 1100px;
+    height: 74px;
+    margin: 0 auto;
+    background: url(../images/img03.gif);
+    display: none;
+}
+
+/* Footer */
+
+footer {}
+
+/* Footer (Tag: Paragraph) */
+footer p {
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    line-height: normal;
+    color: #000000;
+}
+
+/* Footer (Tag: Hyperlink) */
+footer a {
+    color: #000000;
+}
+
+
+
+/********* CLASSES *********/
+
+
+/******* CSS GRID *******/
+
+/* Row Class */
+.row {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #dad7d7;
+}
+
+/* Row Class (Class:Column) */
+.row .col {
+    float: left;
+    width: 48%;
+    padding: 0 9px;
+    border: 5px right black;
+}
+
+/* Column Class (Tag: Heading3) */
+.col h3 {
+    padding: 0px 0px 5px 0px;
+}
+
+/********* IDS *********/
+
+
+/******* CONTACT INFORMATION *******/
+#contactinfo {
+    padding: 0px;
+}
+
+/* Contact Information (Tag: Heading3) */
+#contactinfo h3 {
+    line-height: 1.9;
+    font-size: 22px;
+    padding: 2px;
+}
+
+/* Contact Inforamtion (Class: Row) */
+#contactinfo .row {
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+}
+
+/* Contact Information (Class: Image) */
+#contactinfo img {
+    display: none;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+/* Contact Information (Class: Row) */
+#contactinfo .row {
+    border: none
+}
+
+
+
+/******* HEADER WRAPPER *******/
+#header-wrapper {
+    height: 74px;
+    background: url(../images/img02.gif);
+    display: none;
+}
+
+/******* GRID CONTAINER *******/
+
+#gridcontainer {}
+
+/******* INTRO *******/
+#intro {
+    padding: 0 9px;
+}
+
+/******* MENU *******/
+#menu {
+    float: left;
+    width: 680px;
+    height: 74px;
+    background: url(../images/img04.gif) no-repeat;
+}
+
+/* Menu (Tag: Unordered List) */
+#menu ul {
+    margin: 0;
+    padding: 33px 0 0 90px;
+    list-style: none;
+    line-height: normal;
+}
+
+/* Menu (Tag: Ordered List) */
+#menu li {
+    display: block;
+    float: left;
+}
+
+/* Menu (Tag: Hyperlink) */
+#menu a {
+    display: block;
+    float: left;
+    margin-right: 17px;
+    padding: 5px 12px;
+    text-decoration: none;
+    font: 14px Georgia, "Times New Roman", Times, serif;
+    color: #658453;
+}
+
+/* Menu (Tag: Hyperlink Hover) */
+#menu a:hover {
+    text-decoration: underline;
+}
+
+/* Menu (Class: current_page_item, Tag: Hyperlink) */
+#menu .current_page_item a {
+    background: #A2CE89 url(../images/img06.gif) repeat-x;
+    color: #FFFFFF;
+}
+
+
+
+/******* PAGE *******/
+#page {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 45px;
+    background: #FFFFFF url(../images/img08.gif) repeat-x;
+    border: 5px solid #FFFFFF;
+}
+
+
+
+/******* LOGO *******/
+#logo {
+    height: 148px;
+    background: url(../images/img09.gif) repeat-x left bottom;
+}
+
+
+/* Logo (Tag: Img) */
+#logo img {
+    display: none;
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding: 30px 10px 0px 0px;
+}
+
+/* Logo (Tag: Heading1, Tag: Paragraph) */
+#logo h1, #logo p {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+/* Logo (Tag: Heading1) */
+#logo h1 {
+    padding-top: 45px;
+}
+
+/* Logo (Tag: Heading1, Hyperlink */
+#logo h1 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Logo (Tag: Hyperlink1, Hyperlink Hover) */
+#logo h1 a:hover {
+    text-decoration: underline;
+}
+
+/* Logo (Tag: Paragraph) */
+#logo p {
+    padding: 65px 0 0 15px;
+    font: italic 13px Georgia, "Times New Roman", Times, serif;
+    color: #B6ACA2;
+}
+
+/* Logo (Tag: Paragraph, Hyperlink) */
+#logo p a {
+    text-decoration: none;
+    color: #B6ACA2;
+}
+
+/* Logo (Tag: Paragraph, Hyperlink Hover) */
+#logo p a:hover {
+    text-decoration: underline;
+}
