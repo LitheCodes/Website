@@ -4,10 +4,15 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 
-Name       : Optimism
-Description: A two-column, fixed-width design for 1024x768 screen resolutions.
-Version    : 2.0
-Released   : 2021-
+Name       : Ass2Website
+Description: A two-column website made by myself using methods that would allow it to be compatible on older browsers as per this website https://matthewjamestaylor.com/equal-height-columns
+Version    : 1
+Released   : 2023-
+-->
+
+<!-- Image Sources
+Basil: https://commons.wikimedia.org/wiki/Category:Ocimum_basilicum#/media/File:Basil-Basilico-Ocimum_basilicum-albahaca.jpg
+Spring Onions: https://upload.wikimedia.org/wikipedia/commons/9/9c/Spring_Onion.jpg 
 -->
 
 <html lang="en">
@@ -18,27 +23,30 @@ Released   : 2021-
 
 	<!-- Metadata -->
 	<meta charset="utf-8">
-	<meta name="color-scheme" content="dark light">
-	<meta name="keywords" content="student, website">
-	<meta name="description" content="My website for assignment 2">
+	<meta name="keywords" content="education, learning, student website">
+	<meta name="description" content="A page with some beginner gardening tips">
 
-	<!-- Title -->
-	<title>About Me</title>
-
-	<!-- Stylesheet -->
+	<!-- Style Sheets -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+	<!-- Window/Tab Title -->
+	<title>Gardening Tips</title>
+
 </head>
 
-<!-- Body -->
+
+<!-- Body  -->
 
 <body>
 
 	<!-- Header Wrapper-->
 	<div id="header-wrapper">
+
+		<!-- Header -->
 		<header>
 
-			<!-- Banner Menu -->
+			<!-- Menu -->
 			<div id="menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -47,33 +55,25 @@ Released   : 2021-
 					<li class="current_page_item"><a href="gardening.html">Gardening Tips</a></li>
 				</ul>
 			</div>
-			<!-- end #menu -->
-			<div id="search">
-				<form method="get" action="">
-					<fieldset>
-						<input type="text" name="s" id="search-text" size="15">
-						<input type="submit" id="search-submit" value="Search">
-					</fieldset>
-				</form>
-			</div>
-			<!-- end #search -->
+			<!-- End Menu -->>
+
 		</header>
-		<!-- end #header -->
+		<!-- End Header -->
+
 	</div>
-	<!-- end #header-wrapper -->
+	<!-- End Header Wrapper -->
 
 	<!-- Page -->
 	<div id="page">
 
-		<!-- $logo -->
+		<!-- Logo -->
 		<div id="logo">
 			<img src="images/logo.png" alt="Website Logo">
 			<h1><a href="#">Gardening Tips</a></h1>
 		</div>
-		<!-- end #logo -->
+		<!-- End Logo -->
 
-
-		<!-- Introduction to the page -->
+		<!-- Intro -->
 		<div id="intro">
 			<h2 class="title">Introduction</h2>
 			<p> Gardening can be complicated or it can be simple. Some plants can require a lot of care, some plants can
@@ -86,22 +86,26 @@ Released   : 2021-
 			</p>
 
 		</div>
+		<!-- End Intro -->
+
+		<!-- Horizontal Rule -->
 		<hr>
 
 
 
-
-
-		<!-- Row Container -->
+		<!-- First Row -->
 		<div class="row">
 
-			<!-- Column Class-->
+			<!-- First Column -->
 			<div class="col">
 
 				<!-- Title -->
 				<h2 class="title">How To Grow Spring Onions</h2>
-				<a href="https://www.localseeds.com.au/product/spring-onion-green-onions/"><img
-						src="images/springonion.jpg" alt="" width="200" height="200" class="right"></a>
+
+				<!-- Image: Spring Onion -->
+				<a href="https://upload.wikimedia.org/wikipedia/commons/9/9c/Spring_Onion.jpg"><img
+						src="images/springonion.jpg" title="Wikimedia Commons (Source)" alt="Image: Spring Onion"
+						class="entry"></a>
 
 				<!-- Opening Paragraph -->
 				<p>Spring onions are one of the easiest plants for an aspiring gardener to grow. They are easy
@@ -112,8 +116,10 @@ Released   : 2021-
 					follow
 					the guide below </p>
 
-				<!-- Guide to grow Spring Onions (List) -->
+				<!-- Guide Heading -->
 				<h3>Step-By-Step Guide</h3>
+
+				<!-- List Instructions: Spring Onions -->
 				<ol>
 					<li>Buy Spring Onions</li>
 					<li>Cut the spring onions down to slightly above the base (Where the roots come from)</li>
@@ -122,31 +128,36 @@ Released   : 2021-
 						onions are very sturdy.</li>
 					<li>Water the spring onions</li>
 				</ol>
+
+				<!-- Second Paragraph-->
 				<p>If you followed the steps above, check your spring onions tomorrow, you should notice growth!
 					(Wow, so quick!) </p>
 
-
-				<!-- Link to Source Image-->
-				<p class="links"><a href="https://www.localseeds.com.au/product/spring-onion-green-onions/"
-						class="permalink">Source Image From LocalSeeds</a></p>
 			</div>
-			<div class="col" style="border-left: 1px solid #c9c9c9">
+			<!-- First Column End -->
 
+			<!-- Second Column (Right) | Right column puts border on the left -->
+			<div class="col right">
+
+				<!-- Title -->
 				<h2 class="title">Lamiaceae Herb Cultivation and Cloning</h2>
-				<!-- Image -->
-				<a href="https://www.amazingherbgarden.com/rooting-basil-cuttings/"><img src="images/basil.png" alt=""
-						width="200" height="200" class="right"></a>
+				<!-- Image: Basil -->
+				<a
+					href="https://commons.wikimedia.org/wiki/Category:Ocimum_basilicum#/media/File:Basil-Basilico-Ocimum_basilicum-albahaca.jpg"><img
+						src="images/basil.png" title="Wikimedia Commons (Source)" alt="Image: Basil" class="entry"></a>
 
-				<!-- Paragraph -->
+				<!-- Opening Paragraph -->
 				<p>While growing from seed is an option, herbs in the Lamiacaea family can be cultivated, or
 					"cloned" from existing plants to create healthy copies of those plants
 					that will grow individually. In terms of success rate, this depends on the herb with leafy
 					herbs
 					like mint and basil being easier
-					and woodier herbs such as rosemary being more difficult.
+					and woodier herbs such as rosemary being more difficult.</p>
 
-					<!-- List -->
+				<!-- Heading -->
 				<h3>Lamiacae Herbs</h3>
+
+				<!-- List: Lamiacae Herbs -->
 				<ul>
 					<li>Mint</li>
 					<li>Basil (and thai basil)</li>
@@ -157,7 +168,7 @@ Released   : 2021-
 					<li>and more</li>
 				</ul>
 
-				<!-- Step by Step guide to cloning herbs-->
+				<!-- List Instructions: Rooting herbs -->
 				<h3>Step-By-Step Guide</h3>
 				<ol>
 					<li>Take a cutting from a healthy plant (Ensure you leave as much of the stem on your
@@ -168,6 +179,7 @@ Released   : 2021-
 					<li>Once roots are grown, bury roots in dirt and ensure plant is watered</li>
 				</ol>
 
+				<!-- Heading: Additional Information-->
 				<h3>Additional Information</h3>
 				<p>If you're worried about harming your plant by taking cuttings, be reassured. Cutting lamiacae
 					plants actually encourages growth! (wow).
@@ -177,23 +189,36 @@ Released   : 2021-
 					make another plant! (amazing). If you are taking cuttings from plants that are not your own,
 					make sure to ask permission first!</p>
 
-				<p class="links"><a href="#" class="permalink">Full article</a></p>
 			</div>
+			<!-- Second Column End -->
 		</div>
-
-		<hr>
+		<!-- Row End-->
 
 		<div style="clear: both;">&nbsp;</div>
-		<footer>
-			<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a
-					href="http://www.nodethirtythree.com/">NodeThirtyThree</a> &amp; <a
-					href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
-		</footer>
-		<!-- end #footer -->
-	</div>
-	<!-- end #page -->
-	<div align=center>Put something here.</div>
 
+		<!-- Footer -->
+		<footer>
+			<!-- Valid CSS -->
+			<p style="float: left; padding: 20px">
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+					<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+						alt="Valid CSS!">
+				</a>
+			</p>
+
+			<!-- Copyright Message -->
+			<p style="display: inline-block">Copyright (c) 2023 24086453.it.scu.edu.au/. All rights reserved. Original
+				Template
+				Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> &amp; <a
+					href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Edit of Template (This website) by
+				Natalie</p>
+
+		</footer>
+		<!-- End Footer-->
+
+	</div>
+	<!-- End Page -->
 </body>
+<!-- End Body -->
 
 </html>

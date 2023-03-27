@@ -3,356 +3,363 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 
-Modified by Natalie
+Modified by Natalie, more detailed comments included where code is not as self-explaining.
 */
-
-
-/* If the user prefers light mode */
-
-
 /********* HTML TAG SETTINGS *********/
 
-
-@media screen and (prefers-color-scheme: light) {
-	/****** BODY SETTINGS *******/
-	body {
-		margin: 0;
-		padding: 0;
-		background: #ffffff url(../images/img01.gif);
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		font-size: 13px;
-		color: #837669;
-	}
-
-
-	/******* HEADING SETTINGS *******/
-
-	/* Heading 1 2 and 3 */
-	h1, h2, h3 {
-		margin: 0;
-		font-family: Georgia, "Times New Roman", Times, serif;
-		font-weight: normal;
-		color: #6D5A46;
-	}
-
-	/* Heading 1 */
-	h1 {
-		font-size: 44px;
-	}
-
-	/* Heading 2 */
-	h2 {
-		font-size: 26px;
-	}
-
-	/* Heading 3 */
-	h3 {}
-
-	/* Heading 2 (Class: Title) */
-	h2.title {
-		padding: 7px 0px;
-		text-align: left;
-	}
-
-
-
-
-
-	/******* PARAGRAPH/LIST SETTINGS *******/
-
-	/* p, unordered list and ordered list settings */
-	p, ul, ol {
-		margin-top: 0;
-		line-height: 150%;
-		text-align: justify;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		font-size: 11px;
-	}
-
-	/* List and Ordered List Settings */
-	ul, ol {}
-
-
-
-	/******* HYPERLINK SETTINGS *******/
-
-	/* Hyperlink */
-	a {
-		color: #777777;
-	}
-
-	a:visited {
-		color: #6D5A46;
-	}
-
-	/* Hyperlink Hover */
-	a:hover {
-		text-decoration: none;
-	}
-
-	/* Hyperlink Image */
-	a img {
-		border: none;
-	}
-
-
-
-	/******* IMAGE SETTINGS *******/
-
-	/* Image Class: Left */
-	img.left {
-		float: left;
-		margin: 7px 30px 0 0;
-	}
-
-	/* Image Class: Right */
-	img.right {
-		float: right;
-		margin: 7px 0 0 30px;
-	}
-
-	/*** Horizontal Rule ***/
-	/* Code used from: https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
-	hr {
-		border: none;
-		height: 1px;
-		background-color: #dad7d7;
-
-	}
-
-
-
-
-	/******* HEADER AND FOOTER SETTINGS *******/
-
-	/* Header */
-	header {
-		width: 1100px;
-		height: 74px;
-		margin: 0 auto;
-		background: url(../images/img03.gif);
-	}
-
-	/* Footer */
-	footer {
-		background: url(../images/img09.gif) repeat-x;
-	}
-
-	/* Footer (Tag: Paragraph) */
-	footer p {
-		margin: 0;
-		padding: 30px 0;
-		text-align: center;
-		line-height: normal;
-		color: #B5ADA5;
-	}
-
-	/* Footer (Tag: Hyperlink) */
-	footer a {
-		color: #B5ADA5;
-	}
-
-
-
-	/********* CLASSES *********/
-
-
-	/******* CSS GRID *******/
-
-	/* Row Class */
-	.row {
-		width: 100%;
-		float: left;
-		border-bottom: 1px solid #dad7d7;
-	}
-
-	/* Row Class (Class:Column) */
-	.row .col {
-		float: left;
-		width: 48%;
-		padding: 0 9px;
-		border: 5px right black;
-	}
-
-	/* Column Class (Tag: Heading3) */
-	.col h3 {
-		padding: 0px 0px 5px 0px;
-	}
-
-	/********* IDS *********/
-
-
-	/******* CONTACT INFORMATION *******/
-
-	#contactinfo ul {
-		padding: 0px;
-		margin: 0px;
-		width: 80%;
-		list-style-type: none;
-	}
-
-	#contactinfo h3 {
-		line-height: 2;
-		font-size: 22px;
-		padding: 0px;
-		display: inline;
-
-	}
-
-
-	#contactinfo h3:hover {
-		text-decoration: underline;
-		background-color: hsl(0, 0%, 89%);
-	}
-
-	#contactinfo a:link {
-		text-decoration: none;
-	}
-
-	#contactinfo h3:active {
-		background-color: hsl(296, 42%, 63%);
-	}
-
-	img.icon {
-		width: 40px;
-		height: 40px;
-		margin: 2px;
-		float: left;
-
-	}
-
-
-
-	/******* HEADER WRAPPER *******/
-	#header-wrapper {
-		height: 74px;
-		background: url(../images/img02.gif);
-	}
-
-	/******* GRID CONTAINER *******/
-
-	#gridcontainer {}
-
-	/******* INTRO *******/
-	#intro {
-		padding: 0 9px;
-	}
-
-	/******* MENU *******/
-	#menu {
-		float: left;
-		width: 680px;
-		height: 74px;
-		background: url(../images/img04.gif) no-repeat;
-	}
-
-	/* Menu (Tag: Unordered List) */
-	#menu ul {
-		margin: 0;
-		padding: 33px 0 0 90px;
-		list-style: none;
-		line-height: normal;
-	}
-
-	/* Menu (Tag: Ordered List) */
-	#menu li {
-		display: block;
-		float: left;
-	}
-
-	/* Menu (Tag: Hyperlink) */
-	#menu a {
-		display: block;
-		float: left;
-		margin-right: 17px;
-		padding: 5px 12px;
-		text-decoration: none;
-		font: 14px Georgia, "Times New Roman", Times, serif;
-		color: #658453;
-	}
-
-	/* Menu (Tag: Hyperlink Hover) */
-	#menu a:hover {
-		text-decoration: underline;
-	}
-
-	/* Menu (Class: current_page_item, Tag: Hyperlink) */
-	#menu .current_page_item a {
-		background: #A2CE89 url(../images/img06.gif) repeat-x;
-		color: #FFFFFF;
-	}
-
-
-
-	/******* PAGE *******/
-	#page {
-		width: 1000px;
-		margin: 0 auto;
-		padding: 0 45px;
-		background: #FFFFFF url(../images/img08.gif) repeat-x;
-		border: 5px solid #FFFFFF;
-	}
-
-	.col a:hover {
-		background-color: pink;
-	}
-
-
-
-	/******* LOGO *******/
-	#logo {
-		height: 148px;
-		background: url(../images/img09.gif) repeat-x left bottom;
-	}
-
-
-	/* Logo (Tag: Img) */
-	#logo img {
-		float: left;
-		width: 80px;
-		height: 80px;
-		padding: 30px 10px 0px 0px;
-	}
-
-	/* Logo (Tag: Heading1, Tag: Paragraph) */
-	#logo h1, #logo p {
-		float: left;
-		margin: 0;
-		padding: 0;
-		line-height: normal;
-	}
-
-	/* Logo (Tag: Heading1) */
-	#logo h1 {
-		padding-top: 45px;
-	}
-
-	/* Logo (Tag: Heading1, Hyperlink */
-	#logo h1 a {
-		text-decoration: none;
-		color: #6D5A46;
-	}
-
-	/* Logo (Tag: Hyperlink1, Hyperlink Hover) */
-	#logo h1 a:hover {
-		text-decoration: underline;
-	}
-
-	/* Logo (Tag: Paragraph) */
-	#logo p {
-		padding: 65px 0 0 15px;
-		font: italic 13px Georgia, "Times New Roman", Times, serif;
-		color: #B6ACA2;
-	}
-
-	/* Logo (Tag: Paragraph, Hyperlink) */
-	#logo p a {
-		text-decoration: none;
-		color: #B6ACA2;
-	}
-
-	/* Logo (Tag: Paragraph, Hyperlink Hover) */
-	#logo p a:hover {
-		text-decoration: underline;
-	}
+/****** BODY SETTINGS *******/
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff url(../images/img01.gif);
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #837669;
+}
+
+
+/******* HEADING SETTINGS *******/
+
+/* Heading 1 2 and 3 */
+h1, h2, h3 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #6D5A46;
+}
+
+/* Heading 1 */
+h1 {
+	font-size: 44px;
+}
+
+/* Heading 2 */
+h2 {
+	font-size: 26px;
+}
+
+/* Heading 3 */
+h3 {}
+
+/* Heading 2 (Class: Title) */
+h2.title {
+	padding: 7px 0px;
+	text-align: left;
+}
+
+/******* PARAGRAPH/LIST SETTINGS *******/
+
+/* p, unordered list and ordered list settings */
+p, ul, ol {
+	margin-top: 0;
+	line-height: 150%;
+	text-align: justify;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+/* List and Ordered List Settings */
+ul, ol {}
+
+
+
+/******* HYPERLINK SETTINGS *******/
+
+/* Hyperlink */
+a {
+	color: #777777;
+}
+
+/* Links flash pink when clicked */
+a:active {
+	background-color: #c379c8;
+}
+
+/* Hyperlink Hover */
+a:hover {
+	text-decoration: none;
+}
+
+/* Hyperlink Image */
+a img {
+	border: none;
+}
+
+
+
+/******* IMAGE SETTINGS *******/
+
+/* Used to float image to the left */
+img.left {
+	float: left;
+	margin: 7px 30px 0 0;
+}
+
+/* Used to float image to the right */
+img.right {
+	float: right;
+	margin: 7px 0 0 30px;
+}
+
+/* Used to create standard size for images in columns */
+img.entry {
+	width: 150px;
+	height: auto;
+	float: right;
+	margin: 7px 0 0 30px;
+}
+
+/* Used to create standard size for icon type images */
+img.icon {
+	width: 40px;
+	height: 40px;
+	margin: 2px;
+	float: left;
+
+}
+
+/*** Horizontal Rule ***/
+/* Code used from: https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
+hr {
+	border: none;
+	height: 1px;
+	background-color: #dad7d7;
+
+}
+
+/******* HEADER AND FOOTER SETTINGS *******/
+
+/* Header */
+header {
+	width: 1100px;
+	height: 74px;
+	margin: 0 auto;
+	background: url(../images/img03.gif);
+}
+
+/* Footer */
+footer {
+	background: url(../images/img09.gif) repeat-x;
+}
+
+/* Footer (Tag: Paragraph) */
+footer p {
+	margin: 0;
+	padding: 30px 0;
+	text-align: center;
+	line-height: normal;
+	color: #B5ADA5;
+}
+
+/* Footer (Tag: Hyperlink) */
+footer a {
+	color: #B5ADA5;
+}
+
+
+
+/********* CLASSES *********/
+
+/******* CSS GRID *******/
+
+/* Used to create rows for management of content */
+.row {
+	width: 100%;
+	float: left;
+	padding: 0px 0px 5px 0px;
+	border-bottom: 1px solid #dad7d7;
+}
+
+/* Columns span 48% of a 'row' allowing for two columns per row */
+.row .col {
+	float: left;
+	width: 48%;
+	padding: 0 9px;
+}
+
+.col {}
+
+/* Adjusting padding for heading 3 in columns */
+.col h3 {
+	padding: 0px 0px 5px 0px;
+}
+
+/* Used in the event left column is longer, creates border on right */
+.col.left {
+	border-right: 1px solid #c9c9c9;
+
+}
+
+/* Used in the event right column is longer, creates border on left */
+.col.right {
+	border-left: 1px solid #c9c9c9;
+}
+
+
+/********* IDS *********/
+
+
+/******* CONTACT INFORMATION *******/
+
+/* Used to set the width of an unordered list specifically with relation to contact information */
+#contactinfo ul {
+	padding: 0px;
+	margin: 0px;
+	width: 80%;
+	list-style-type: none;
+}
+
+/* Specific heading 3 settings are used for contact information to set them apart from other content as they are interractive */
+#contactinfo h3 {
+	line-height: 2;
+	font-size: 22px;
+	padding: 0px;
+	display: inline;
+
+}
+
+/* Highlights gray behind H3 when hovered, didn't really have to do this, especially as it makes it 'different' to other pages, but
+wanted to at least implement a hover state somewhere to prove I learned it */
+#contactinfo h3:hover {
+	text-decoration: underline;
+	background-color: hsl(0, 0%, 89%);
+}
+
+/* Removes text decoration (Underline) from contact information */
+#contactinfo a:link {
+	text-decoration: none;
+}
+
+/* When clicked, contact information turns pink */
+#contactinfo h3:active {
+	background-color: #c379c8;
+}
+
+
+
+/******* HEADER WRAPPER *******/
+#header-wrapper {
+	height: 74px;
+	background: url(../images/img02.gif);
+}
+
+/******* INTRO *******/
+#intro {
+	padding: 0 9px;
+}
+
+/******* MENU *******/
+#menu {
+	float: left;
+	width: 680px;
+	height: 74px;
+	background: url(../images/img04.gif) no-repeat;
+}
+
+/* Menu (Tag: Unordered List) */
+#menu ul {
+	margin: 0;
+	padding: 33px 0 0 90px;
+	list-style: none;
+	line-height: normal;
+}
+
+/* Menu (Tag: Ordered List) */
+#menu li {
+	display: block;
+	float: left;
+}
+
+/* Menu (Tag: Hyperlink) */
+#menu a {
+	display: block;
+	float: left;
+	margin-right: 17px;
+	padding: 5px 12px;
+	text-decoration: none;
+	font: 14px Georgia, "Times New Roman", Times, serif;
+	color: #658453;
+}
+
+/* Menu (Tag: Hyperlink Hover) */
+#menu a:hover {
+	text-decoration: underline;
+}
+
+/* Menu (Class: current_page_item, Tag: Hyperlink) */
+#menu .current_page_item a {
+	background: #A2CE89 url(../images/img06.gif) repeat-x;
+	color: #FFFFFF;
+}
+
+
+
+/******* PAGE *******/
+#page {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0 45px;
+	background: #FFFFFF url(../images/img08.gif) repeat-x;
+	border: 5px solid #FFFFFF;
+}
+
+
+
+
+
+/******* LOGO *******/
+#logo {
+	height: 148px;
+	background: url(../images/img09.gif) repeat-x left bottom;
+}
+
+
+/* Logo (Tag: Img) */
+#logo img {
+	float: left;
+	width: 80px;
+	height: 80px;
+	padding: 30px 10px 0px 0px;
+}
+
+/* Logo (Tag: Heading1, Tag: Paragraph) */
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+/* Logo (Tag: Heading1) */
+#logo h1 {
+	padding-top: 45px;
+}
+
+/* Logo (Tag: Heading1, Hyperlink */
+#logo h1 a {
+	text-decoration: none;
+	color: #6D5A46;
+}
+
+/* Logo (Tag: Hyperlink1, Hyperlink Hover) */
+#logo h1 a:hover {
+	text-decoration: underline;
+}
+
+/* Logo (Tag: Paragraph) */
+#logo p {
+	padding: 65px 0 0 15px;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	color: #B6ACA2;
+}
+
+/* Logo (Tag: Paragraph, Hyperlink) */
+#logo p a {
+	text-decoration: none;
+	color: #B6ACA2;
+}
+
+/* Logo (Tag: Paragraph, Hyperlink Hover) */
+#logo p a:hover {
+	text-decoration: underline;
 }

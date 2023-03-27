@@ -4,37 +4,47 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 
-Name       : Optimism
-Description: A two-column, fixed-width design for 1024x768 screen resolutions.
-Version    : 2.0
-Released   : 2021-
+Name       : Ass2Website
+Description: A two-column website made by myself using methods that would allow it to be compatible on older browsers as per this website https://matthewjamestaylor.com/equal-height-columns
+Version    : 1
+Released   : 2023-
+-->
+
+<!-- Image Sources 
+Game and Watch: https://commons.wikimedia.org/wiki/Category:Game_%26_Watch#/media/File:Game_&_Watch.png
+Sega: https://commons.wikimedia.org/wiki/Category:Sega_Mega_Drive#/media/File:Sega-Genesis-NA-Mk2-Console-Set.png
+Anime DVDs: https://commons.wikimedia.org/wiki/Category:Anime#/media/File:Anime_DVDs.JPG
+
 -->
 
 <html lang="en">
 
-<!-- Head 
-Contains title information, charset, styles and other important information
--->
 
 <head>
+    <!-- Metadata -->
     <meta charset="utf-8">
-    <title>My Hobbies</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="keywords" content="education, learning, student website">
+    <meta name="description" content="A page that shows some of my hobbies">
+
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <!-- Window/Tab Title -->
+    <title>My Hobbies</title>
 </head>
 
-<!-- Body 
-	Contains the content and markup
--->
+<!-- Body  -->
 
 <body>
 
+    <!-- Header Wrapper-->
     <div id="header-wrapper">
+
+        <!-- Header -->
         <header>
-            <!-- Banner menu
-		Contains options at the top of the screen to navigate through the website -->
+
+            <!-- Menu -->
             <div id="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -43,44 +53,49 @@ Contains title information, charset, styles and other important information
                     <li><a href="gardening.html">Gardening Tips</a></li>
                 </ul>
             </div>
-            <!-- end #menu -->
-            <div id="search">
-                <form method="get" action="">
-                    <fieldset>
-                        <input type="text" name="s" id="search-text" size="15" />
-                        <input type="submit" id="search-submit" value="Search" />
-                    </fieldset>
-                </form>
-            </div>
-            <!-- end #search -->
+            <!-- End Menu -->>
+
         </header>
-        <!-- end #header -->
+        <!-- End Header -->
+
     </div>
-    <!-- end #header-wrapper -->
+    <!-- End Header Wrapper -->
 
     <!-- Page -->
     <div id="page">
 
-        <!-- $logo -->
+        <!-- Logo -->
         <div id="logo">
             <img src="images/logo.png" alt="Website Logo">
             <h1><a href="#">Hobbies</a></h1>
         </div>
-        <!-- end #logo -->
+        <!-- End Logo -->
 
-        <!-- Content Grid Container -->
-        <!-- <div id="gridcontainer"> -->
+        <!-- Intro -->
+        <div id="intro">
+            <h2 class="title">Introduction</h2>
+            <p> Everyone needs a hobby, whether it be building lego, playing video games or exercise. Hobbies are things
+                that not everyone might enjoy but you do. Here are a few of my hobbies below</p>
 
+        </div>
+        <!-- End Intro -->
 
+        <!-- Horizontal Rule -->
+        <hr>
 
-        <!-- Row Container -->
+        <!-- First Row -->
         <div class="row">
 
-            <!-- Column Class-->
-            <div class="col">
+            <!-- First Column (Left) | Note: Column left places border on right hand side -->
+            <div class="col left">
 
                 <!-- Title -->
                 <h2 class="title">Gardening</h2>
+
+                <!-- Image: Basil -->
+                <a
+                    href="https://commons.wikimedia.org/wiki/Category:Ocimum_basilicum#/media/File:Basil-Basilico-Ocimum_basilicum-albahaca.jpg"><img
+                        src="images/basil.png" title="Wikimedia Commons (Source)" alt="Image: Basil" class="entry"></a>
 
 
                 <!-- Opening Paragraph -->
@@ -92,180 +107,107 @@ Contains title information, charset, styles and other important information
                     and propagating
                     different types of herbs and fruit. Presently my favorite fruit to grow is chilli and I have around
                     8 chilli plants as of writing this.
+                </p>
+
+                <!-- Second Paragraph -->
+                <p>
                     If you are interested in learning some easy ways to get started in gardening, I have provided some
                     tips on this website which
                     can be accessed by clicking gardening tips option in the navigation bar or by <a
                         href="gardening.html">clicking here. </a> </p>
-                <a href="https://www.localseeds.com.au/product/spring-onion-green-onions/"><img
-                        src="images/springonion.jpg" alt="" width="200" height="200" class="right"></a>
-
-                <!-- Link to Source Image-->
-                <p class="links"><a href="https://www.localseeds.com.au/product/spring-onion-green-onions/"
-                        class="permalink">Source Image From LocalSeeds</a></p>
             </div>
-            <div class="col" style="border-left: 1px solid #c9c9c9">
+            <!-- First Column End -->
 
-                <h2 class="title">Lamiaceae Herb Cultivation and Cloning</h2>
-                <div class="entry">
-                    <!-- Image -->
-                    <a href="https://www.amazingherbgarden.com/rooting-basil-cuttings/"><img src="images/basil.png"
-                            alt="" width="200" height="200" class="right"></a>
+            <!-- Second Column -->
+            <div class="col">
 
-                    <!-- Paragraph -->
-                    <p>While growing from seed is an option, herbs in the Lamiacaea family can be cultivated, or
-                        "cloned" from existing plants to create healthy copies of those plants
-                        that will grow individually. In terms of success rate, this depends on the herb with leafy
-                        herbs
-                        like mint and basil being easier
-                        and woodier herbs such as rosemary being more difficult.
+                <!-- Title -->
+                <h2 class="title">Gaming</h2>
 
-                        <!-- List -->
-                    <h3>Lamiacae Herbs</h3>
-                    <ul>
-                        <li>Mint</li>
-                        <li>Basil (and thai basil)</li>
-                        <li>Rosemary</li>
-                        <li>Sage</li>
-                        <li>Oregano</li>
-                        <li>Lavendar</li>
-                        <li>and more</li>
-                    </ul>
+                <!-- Image: Game and Watch -->
+                <a href="https://commons.wikimedia.org/wiki/Category:Game_%26_Watch#/media/File:Game_&_Watch.png"><img
+                        src="images/game.png" alt="Image: Game" title="Wikimedia Commons (Source)" class="entry"></a>
 
-                    <!-- Step by Step guide to cloning herbs-->
-                    <h3>Step-By-Step Guide</h3>
-                    <ol>
-                        <li>Take a cutting from a healthy plant (Ensure you leave as much of the stem on your
-                            cutting as
-                            possible)</li>
-                        <li>Cut off all leaves except for the top most leaves</li>
-                        <li>Change water once a day while waiting for the herb to grow roots from the stem</li>
-                        <li>Once roots are grown, bury roots in dirt and ensure plant is watered</li>
-                    </ol>
+                <!-- Opening Paragraph -->
+                <p>Gaming has been a hobby of mine since I was 5 years old and was gifted a gameboy for my birthday.
+                    My first game was Game and Watch Gallery, which was a mixture of both Modernized and Classic Game
+                    and Watch games. The modern versions featured
+                    mario characters such as Yoshi, Mario and Princess Peach.
+                </p>
 
-                    <h3>Additional Information</h3>
-                    <p>If you're worried about harming your plant by taking cuttings, be reassured. Cutting lamiacae
-                        plants actually encourages growth! (wow).
-                        Cutting a lamiacae herb above the leaf will prompt two new stems to grow diagonally
-                        from where you cut. You can then try using the cutting you took either in your cooking, or
-                        to
-                        make another plant! (amazing). If you are taking cuttings from plants that are not your own,
-                        make sure to ask permission first!</p>
+                <!-- Image: Sega Megadrive -->
+                <a href="https://commons.wikimedia.org/wiki/Category:Game_%26_Watch#/media/File:Game_&_Watch.png"><img
+                        src="images/sega.png" alt="Image: Game" title="Wikimedia Commons (Source)" class="entry"></a>
 
-                    <p class="links"><a href="#" class="permalink">Full article</a></p>
-                </div>
+                <!-- Second Paragraph -->
+                <p>The first non handheld console was a Sega Megadrive. When we made the leap from the Sega System to
+                    the first Playstation
+                    I was blown away with the change in graphics from 2d to 3d. Metal Gear Solid has to be my favorite
+                    franchise thus far.</p>
+
             </div>
+            <!-- Second Column End -->
         </div>
-        <!-- end #content -->
+        <!-- First Row End -->
 
-        <div id="sidebar">
-            <ul>
-                <li>
-                    <h2>Aliquam tempus</h2>
-                    <p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper urna. Pellentesque
-                        ornare, orci in consectetuer hendrerit, volutpat.</p>
-                </li>
-                <li id="calendar">
-                    <h2>Calendar</h2>
-                    <div id="calendar_wrap">
-                        <table summary="Calendar">
-                            <caption>
-                                January 2022
-                            </caption>
-                            <thead>
-                                <tr>
-                                    <th abbr="Monday" scope="col" title="Monday">M</th>
-                                    <th abbr="Tuesday" scope="col" title="Tuesday">T</th>
-                                    <th abbr="Wednesday" scope="col" title="Wednesday">W</th>
-                                    <th abbr="Thursday" scope="col" title="Thursday">T</th>
-                                    <th abbr="Friday" scope="col" title="Friday">F</th>
-                                    <th abbr="Saturday" scope="col" title="Saturday">S</th>
-                                    <th abbr="Sunday" scope="col" title="Sunday">S</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <td abbr="December" colspan="3" id="prev"><a href="#" title="">&laquo; Dec</a></td>
-                                    <td class="pad">&nbsp;</td>
-                                    <td abbr="February" colspan="3" id="next"><a href="#" title="">Feb &raquo;</a></td>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td colspan="5" class="pad">&nbsp;</td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                    <td>6</td>
-                                    <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td id="today">11</td>
-                                    <td>12</td>
-                                    <td>13</td>
-                                    <td>14</td>
-                                    <td>15</td>
-                                    <td>16</td>
-                                </tr>
-                                <tr>
-                                    <td>17</td>
-                                    <td>18</td>
-                                    <td>19</td>
-                                    <td>20</td>
-                                    <td>21</td>
-                                    <td>22</td>
-                                    <td>23</td>
-                                </tr>
-                                <tr>
-                                    <td>24</td>
-                                    <td>25</td>
-                                    <td>26</td>
-                                    <td>27</td>
-                                    <td>28</td>
-                                    <td>29</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr>
-                                    <td>31</td>
-                                    <td class="pad" colspan="6">&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </li>
-                <li>
-                    <h2>Turpis nulla</h2>
-                    <ul class="list1">
-                        <li><a href="#"><img src="images/img17.jpg" alt="" width="90" height="90" /></a></li>
-                        <li class="alt"><a href="#"><img src="images/img18.jpg" alt="" width="90" height="90" /></a>
-                        </li>
-                        <li><a href="#"><img src="images/img19.jpg" alt="" width="90" height="90" /></a></li>
-                        <li class="alt"><a href="#"><img src="images/img20.jpg" alt="" width="90" height="90" /></a>
-                        </li>
-                    </ul>
-                    <p style="clear: both; margin: 0; line-height: normal; text-align: right;"><a href="#">More photos
-                            &gt;</a></p>
-                </li>
-            </ul>
+
+        <!-- Second Row (No Columns) -->
+        <div class="row">
+
+            <!-- Title -->
+            <h2 class="title" style="padding: 7px 0px 0px 5px">Anime</h2>
+
+            <!-- Title | Inline styles used to bring text in line with column above -->
+            <a href="https://commons.wikimedia.org/wiki/Category:Anime#/media/File:Anime_DVDs.JPG"><img
+                    src="images/animedvds.jpg" alt="Image: Anime DVDs" title="Wikimedia Commons (Source)"
+                    class="entry"></a>
+
+
+            <!-- Opening Paragraph -->
+            <p style="padding: 7px 0px 0px 5px"> I love anime. When I first started watching anime I did not know it
+                was from Japan at first. I
+                thought they were cartoons the
+                same way Scooby-Doo was, with a different style. The first anime I ever watched was Dragon Ball Z.
+                What got me into lesser main stream anime however
+                was when I was watching an anime called Tokyo Mew Mew in English and it abruptly stopped being
+                dubbed. I wanted to know the rest so I sought it out online. </p>
+
+            <!-- Second Paragraph -->
+            <p style="padding: 0px 0px 0px 5px">The english dub was very cute and innocent featuring magical girls.
+                However when I saw the Japanese
+                dub, I
+                realized how much was censored and how gory and violent the anime actually was and I was very
+                intrigued upon realizing that anime was not just 'cartoons for children'.
+                Since then I have gone down a rabbit hole and seen all kinds of anime. I love it. Whenever I go to
+                Japan I always bring back figurines for myself and friends.</p>
         </div>
-        <!-- end #sidebar -->
+        <!-- End Second Row -->
+
         <div style="clear: both;">&nbsp;</div>
+
+        <!-- Footer -->
         <footer>
-            <p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a
-                    href="http://www.nodethirtythree.com/">NodeThirtyThree</a> &amp; <a
-                    href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+            <!-- Valid CSS -->
+            <p style="float: left; padding: 20px">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!">
+                </a>
+            </p>
+
+            <!-- Copyright Message -->
+            <p style="display: inline-block">Copyright (c) 2023 24086453.it.scu.edu.au/. All rights reserved. Original
+                Template
+                Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> &amp; <a
+                    href="http://www.freecsstemplates.org/">Free CSS Templates</a>. Edit of Template (This website) by
+                Natalie</p>
+
         </footer>
-        <!-- end #footer -->
+        <!-- End Footer-->
     </div>
-    <!-- end #page -->
-    <div align=center>Put something here.</div>
+    <!-- End Page-->>
 
 </body>
+<!-- End Body-->
 
 </html>
